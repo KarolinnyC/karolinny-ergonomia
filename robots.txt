@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://karolinnyergonomia.com.br/sitemap.xml
