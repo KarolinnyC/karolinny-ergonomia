@@ -812,3 +812,376 @@ h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-
     grid-template-columns: auto 1fr;
   }
 }
+/* =====================================================
+   RISCOS PSICOSSOCIAIS — SEÇÃO ESTRATÉGICA
+===================================================== */
+
+.psych-v2 {
+  padding: 110px 0 120px;
+  background: #f4f3ec;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+===================================================== */
+
+.psych-v2-header {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 90px;
+  align-items: end;
+  margin-bottom: 65px;
+}
+
+.psych-v2-title .eyebrow {
+  margin-bottom: 20px;
+  color: #5d6b48;
+}
+
+.psych-v2-title h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 4.7vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: #1f2421;
+  margin: 0;
+  max-width: 800px;
+}
+
+.psych-v2-title h2 span {
+  display: block;
+  color: #5d6b48;
+  margin-top: 8px;
+}
+
+.psych-v2-intro {
+  max-width: 520px;
+  padding-bottom: 5px;
+}
+
+.psych-v2-intro p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #626760;
+  margin: 0 0 18px;
+}
+
+.psych-v2-intro p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   3 PILARES
+===================================================== */
+
+.psych-v2-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 70px;
+  border-top: 1px solid rgba(31, 36, 33, 0.16);
+  border-bottom: 1px solid rgba(31, 36, 33, 0.16);
+}
+
+.psych-pillar {
+  padding: 34px 40px 38px 0;
+}
+
+.psych-pillar + .psych-pillar {
+  border-left: 1px solid rgba(31, 36, 33, 0.16);
+  padding-left: 40px;
+}
+
+.psych-pillar span {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #5d6b48;
+  margin-bottom: 18px;
+}
+
+.psych-pillar h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #1f2421;
+  margin: 0 0 13px;
+}
+
+.psych-pillar p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #6d716c;
+  margin: 0;
+}
+
+
+/* =====================================================
+   PAINEL DE PERGUNTAS
+===================================================== */
+
+.psych-v2-question-box {
+  background: #253027;
+  border-radius: 28px;
+  padding: 65px 70px 0;
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 25px 70px rgba(31, 36, 33, 0.12);
+}
+
+
+/* TÍTULO DO PAINEL */
+
+.psych-question-heading {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 45px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.psych-question-label {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 800;
+  letter-spacing: 2.3px;
+  color: #d8dfc9;
+  margin: 0;
+  max-width: 330px;
+}
+
+.psych-question-heading h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(32px, 3vw, 48px);
+  line-height: 1.06;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  max-width: 720px;
+}
+
+
+/* =====================================================
+   PERGUNTAS
+===================================================== */
+
+.psych-question-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.psych-question {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 18px;
+  padding: 34px 40px 34px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.psych-question:nth-child(even) {
+  border-left: 1px solid rgba(255, 255, 255, 0.13);
+  padding-left: 40px;
+}
+
+.psych-question span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #dce3cf;
+  color: #253027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.psych-question p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.86);
+  margin: 3px 0 0;
+}
+
+
+/* =====================================================
+   CTA INFERIOR
+===================================================== */
+
+.psych-v2-action {
+  margin: 0 -70px;
+  padding: 32px 70px;
+  background: #5d6b48;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.psych-v2-action > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.psych-v2-action > div > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #dce3cf;
+}
+
+.psych-v2-action strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.psych-v2-action > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  transition: gap 0.25s ease;
+}
+
+.psych-v2-action > a:hover {
+  gap: 30px;
+}
+
+.psych-v2-action > a > span {
+  font-size: 19px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .psych-v2-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .psych-v2-intro {
+    max-width: 760px;
+  }
+
+  .psych-v2-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .psych-pillar {
+    padding: 30px 0;
+  }
+
+  .psych-pillar + .psych-pillar {
+    border-left: 0;
+    border-top: 1px solid rgba(31, 36, 33, 0.16);
+    padding-left: 0;
+  }
+
+  .psych-question-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .psych-v2-action {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .psych-v2-action > a {
+    width: fit-content;
+  }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .psych-v2 {
+    padding: 75px 0 80px;
+  }
+
+  .psych-v2-header {
+    margin-bottom: 45px;
+  }
+
+  .psych-v2-title h2 {
+    font-size: 43px;
+    letter-spacing: -1.3px;
+  }
+
+  .psych-v2-intro p {
+    font-size: 16px;
+  }
+
+  .psych-v2-pillars {
+    margin-bottom: 45px;
+  }
+
+  .psych-v2-question-box {
+    border-radius: 20px;
+    padding: 38px 25px 0;
+  }
+
+  .psych-question-heading {
+    padding-bottom: 32px;
+  }
+
+  .psych-question-heading h3 {
+    font-size: 34px;
+  }
+
+  .psych-question-list {
+    grid-template-columns: 1fr;
+  }
+
+  .psych-question {
+    padding: 27px 0;
+    grid-template-columns: 38px 1fr;
+    gap: 14px;
+  }
+
+  .psych-question:nth-child(even) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .psych-question p {
+    font-size: 15px;
+  }
+
+  .psych-v2-action {
+    margin: 0 -25px;
+    padding: 28px 25px 32px;
+  }
+
+  .psych-v2-action strong {
+    font-size: 21px;
+  }
+
+  .psych-v2-action > a {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
