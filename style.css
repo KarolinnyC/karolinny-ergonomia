@@ -23,3 +23,24 @@ h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-
 .reveal{animation:rise .8s ease both}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media(max-width:1000px){.hero-grid,.split,.method-head,.psych-box,.experience-box{grid-template-columns:1fr;gap:45px}.hero-visual{min-height:400px}.image-placeholder{height:390px}.cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.container{width:min(100% - 30px,1160px)}.nav{min-height:74px}.menu-toggle{display:block}nav{display:none;position:absolute;top:74px;left:15px;right:15px;background:#fff;padding:18px;border:1px solid var(--line);border-radius:10px;flex-direction:column;gap:15px;box-shadow:0 15px 35px rgba(0,0,0,.08)}nav.open{display:flex}.hero{padding:75px 0 85px}.hero-grid{gap:35px}h1{font-size:46px}.hero-visual{min-height:350px}.image-placeholder{height:350px}.floating-note{left:8px}.cards,.segment-grid,.method-list{grid-template-columns:1fr}.section{padding:75px 0}.portrait,.photo-placeholder{min-height:430px;height:430px}.footer-grid{flex-direction:column}.footer-links{flex-wrap:wrap}}
+
+
+/* AJUSTE DA IMAGEM PRINCIPAL */
+.hero-visual {
+    min-height: auto;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 380px;
+    border-radius: 42% 12% 28% 16%;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
