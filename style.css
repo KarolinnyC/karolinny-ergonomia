@@ -418,3 +418,397 @@ h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-
     font-size: 15px;
   }
 }
+
+
+/* =====================================================
+   SERVIÇOS V2 — DESIGN FINAL
+===================================================== */
+
+.services-v2 {
+  padding: 105px 0 115px;
+  background: #f9f8f3;
+}
+
+
+/* CABEÇALHO */
+
+.services-v2-top {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 55px;
+}
+
+.services-v2-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 4.2vw, 64px);
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 500;
+  color: #1f2421;
+  margin: 15px 0 25px;
+}
+
+.services-v2-intro {
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #6f746f;
+  margin: 0;
+}
+
+
+/* CTA SUPERIOR */
+
+.services-v2-cta {
+  background: #e5e9dc;
+  border-radius: 20px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px 18px;
+  align-items: start;
+}
+
+.cta-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #5d6b48;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.cta-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cta-copy strong {
+  color: #1f2421;
+  font-size: 16px;
+}
+
+.cta-copy span {
+  color: #687066;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  grid-column: 2;
+  text-decoration: none;
+  color: #5d6b48;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid rgba(31,36,33,.12);
+}
+
+
+/* =====================================================
+   GRID — QUATRO CARDS LADO A LADO
+===================================================== */
+
+.services-v2-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  align-items: stretch;
+}
+
+
+/* CARD */
+
+.service-v2-card {
+  min-width: 0;
+  min-height: 520px;
+  padding: 32px 25px 27px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.service-v2-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(31,36,33,.14);
+}
+
+
+/* CORES */
+
+.card-ergonomia {
+  background: #dfe5d5;
+  color: #1f2421;
+}
+
+.card-gestao {
+  background: #5d6b48;
+  color: #ffffff;
+}
+
+.card-psicossocial {
+  background: #e8e2d8;
+  color: #1f2421;
+}
+
+.card-tecnicas {
+  background: #1f2421;
+  color: #ffffff;
+}
+
+
+/* ÍCONE */
+
+.service-v2-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  font-size: 19px;
+  background: rgba(255,255,255,.45);
+}
+
+.card-gestao .service-v2-icon,
+.card-tecnicas .service-v2-icon {
+  background: rgba(255,255,255,.12);
+  color: #ffffff;
+}
+
+
+/* TÍTULO */
+
+.service-v2-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 1.8vw, 31px);
+  line-height: 1.08;
+  letter-spacing: -.7px;
+  font-weight: 500;
+  margin: 0 0 23px;
+  color: inherit;
+}
+
+
+/* LINHA */
+
+.service-v2-line {
+  height: 1px;
+  width: 100%;
+  background: rgba(31,36,33,.15);
+  margin-bottom: 22px;
+}
+
+.card-gestao .service-v2-line,
+.card-tecnicas .service-v2-line {
+  background: rgba(255,255,255,.2);
+}
+
+
+/* DESCRIÇÃO */
+
+.service-v2-description {
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0 0 22px;
+  opacity: .78;
+}
+
+
+/* SERVIÇOS */
+
+.service-v2-items {
+  margin-bottom: 20px;
+}
+
+.service-v2-items > div {
+  display: grid;
+  grid-template-columns: 17px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 12px 0;
+  border-top: 1px solid rgba(31,36,33,.12);
+}
+
+.card-gestao .service-v2-items > div,
+.card-tecnicas .service-v2-items > div {
+  border-color: rgba(255,255,255,.16);
+}
+
+.service-v2-items span {
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.service-v2-items p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+
+/* SAIBA MAIS */
+
+.service-v2-more {
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(31,36,33,.14);
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-gestao .service-v2-more,
+.card-tecnicas .service-v2-more {
+  border-color: rgba(255,255,255,.18);
+}
+
+.service-v2-more span {
+  font-size: 18px;
+  transition: transform .25s ease;
+}
+
+.service-v2-card:hover .service-v2-more span {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   FAIXA INFERIOR
+===================================================== */
+
+.services-v2-bottom {
+  margin-top: 18px;
+  background: #f0eee7;
+  border-radius: 20px;
+  padding: 25px 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 22px;
+  align-items: center;
+}
+
+.bottom-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #5d6b48;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-v2-bottom strong {
+  display: block;
+  color: #1f2421;
+  margin-bottom: 4px;
+}
+
+.services-v2-bottom p {
+  margin: 0;
+  color: #747773;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.services-v2-bottom > a {
+  text-decoration: none;
+  color: #5d6b48;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVO — TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .services-v2-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-v2-cta {
+    max-width: 700px;
+  }
+
+  .services-v2-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .service-v2-card {
+    min-height: 460px;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVO — CELULAR
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .services-v2 {
+    padding: 75px 0 80px;
+  }
+
+  .services-v2-heading h2 {
+    font-size: 42px;
+    letter-spacing: -1.4px;
+  }
+
+  .services-v2-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-v2-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .service-v2-card h3 {
+    font-size: 29px;
+  }
+
+  .services-v2-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-icon {
+    margin-bottom: 3px;
+  }
+
+  .services-v2-bottom > a {
+    margin-top: 5px;
+  }
+
+  .services-v2-cta {
+    grid-template-columns: auto 1fr;
+  }
+}
