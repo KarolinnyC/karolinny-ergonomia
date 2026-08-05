@@ -1418,3 +1418,79 @@ h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-
   background: #4f5b3d;
   border-color: #4f5b3d;
 }
+/* CORREÇÃO DOS BOTÕES DE CONTATO */
+
+.social-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.social-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: auto !important;
+  height: 40px !important;
+
+  padding: 0 14px;
+  border: 1px solid rgba(31, 36, 33, 0.15);
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #1f2421;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+
+  text-decoration: none;
+}
+
+.social-contact svg {
+  width: 17px !important;
+  height: 17px !important;
+
+  min-width: 17px !important;
+  min-height: 17px !important;
+
+  max-width: 17px !important;
+  max-height: 17px !important;
+
+  flex: 0 0 17px !important;
+  display: block !important;
+}
+
+.social-contact span {
+  display: inline-block;
+  line-height: 1;
+}
+
+/* WhatsApp em destaque */
+.social-contact.whatsapp {
+  background: #5d6b48;
+  border-color: #5d6b48;
+  color: #ffffff;
+}
+
+/* Instagram */
+.social-contact.instagram {
+  background: #ffffff;
+  color: #1f2421;
+}
+
+/* LinkedIn */
+.social-contact.linkedin {
+  background: #ffffff;
+  color: #1f2421;
+}
+
+/* Efeito ao passar o mouse */
+.social-contact:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgba(31, 36, 33, 0.08);
+}
