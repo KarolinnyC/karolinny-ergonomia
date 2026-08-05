@@ -1494,3 +1494,218 @@ h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-
   transform: translateY(-1px);
   box-shadow: 0 5px 14px rgba(31, 36, 33, 0.08);
 }
+/* =====================================================
+   CONTATO - LAYOUT FINAL
+===================================================== */
+
+.contact-section {
+  background: #f9f8f3;
+  padding: 38px 0 55px;
+}
+
+.contact-section .container {
+  width: min(92%, 1380px);
+  margin: 0 auto;
+}
+
+.contact-content {
+  max-width: 820px;
+}
+
+/* Texto introdutório */
+
+.contact-description {
+  max-width: 620px;
+  margin: 0 0 22px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #596057;
+}
+
+/* E-mail */
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-email-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef0e9;
+  border-radius: 10px;
+
+  color: #5d6b48;
+  font-size: 20px;
+}
+
+.contact-email-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.contact-email-info strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2421;
+}
+
+.contact-email-info a {
+  font-size: 14px;
+  color: #5d6b48;
+  text-decoration: none;
+}
+
+.contact-email-info a:hover {
+  text-decoration: underline;
+}
+
+/* Linha divisória */
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 28px;
+  background: rgba(31, 36, 33, 0.12);
+}
+
+/* Canais */
+
+.contact-channels-title {
+  margin: 0 0 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1f2421;
+}
+
+/* Botões */
+
+.contact-social-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-social-btn {
+  width: auto !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  padding: 0 18px !important;
+
+  border: 1px solid rgba(31, 36, 33, 0.18);
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #1f2421;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contact-social-btn:hover {
+  transform: translateY(-1px);
+  border-color: #5d6b48;
+  box-shadow: 0 5px 15px rgba(31, 36, 33, 0.07);
+}
+
+/* Ícones - tamanho rigidamente controlado */
+
+.contact-social-icon {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  max-width: 22px !important;
+  min-height: 22px !important;
+  max-height: 22px !important;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px !important;
+  line-height: 1 !important;
+  flex: 0 0 22px !important;
+}
+
+/* WhatsApp destacado */
+
+.contact-whatsapp {
+  background: #5d6b48;
+  border-color: #5d6b48;
+  color: #ffffff;
+  padding-left: 16px !important;
+  padding-right: 20px !important;
+}
+
+.contact-whatsapp:hover {
+  background: #4f5b3d;
+  border-color: #4f5b3d;
+  color: #ffffff;
+}
+
+/* Instagram */
+
+.contact-instagram {
+  background: #ffffff;
+}
+
+/* LinkedIn */
+
+.contact-linkedin {
+  background: #ffffff;
+}
+
+.contact-linkedin .contact-social-icon {
+  background: #0a66c2;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 13px !important;
+  font-weight: 700;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+  .contact-section {
+    padding: 32px 0 42px;
+  }
+
+  .contact-description {
+    font-size: 15px;
+  }
+
+  .contact-social-buttons {
+    gap: 10px;
+  }
+
+  .contact-social-btn {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    padding: 0 14px !important;
+  }
+}
